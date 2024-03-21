@@ -10,7 +10,7 @@ export default class App1 extends Component {
         <View>
           <Text style={estilos.txt1}>Cardápio QR Code</Text>
           <Text>Menu:</Text>
-          <Prato></Prato>
+          <Prato ingrediente="tomate" preco="1,00" tamanho="médio" cor="#f0f"></Prato>
         </View>
       </View>
 
@@ -20,7 +20,7 @@ export default class App1 extends Component {
 const estilos = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#444',
+    backgroundColor: '#ddd',
     alignItems: 'center',
     justifyContent: 'center'
   },
