@@ -23,7 +23,6 @@ export default function () {
                 data={produtos}
                 keyExtractor={item => item.id}
                 renderItem={({ item }) => <Text style={estilos.item}> Descrição: {item.desc[0]} - Valor:{item.desc[1]}</Text>}
-
             />
         </View>
     )
