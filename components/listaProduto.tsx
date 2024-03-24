@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, FlatList } from 'react-native';
+import { View, Text, FlatList, StyleSheet } from 'react-native';
 
 const produtos = [
     {
@@ -22,8 +22,22 @@ export default function () {
             <FlatList
                 data={produtos}
                 keyExtractor={item => item.id}
-                renderItem={({ item }) => <Text> Descrição: {item.desc[0]} - Valor:{item.desc[1]}</Text>}
+                renderItem={({ item }) => <Text style={estilos.item}> Descrição: {item.desc[0]} - Valor:{item.desc[1]}</Text>}
+
             />
         </View>
     )
+
+
 }
+
+const estilos = StyleSheet.create({
+    item: {
+        backgroundColor: '#008',
+        padding: 15,
+        marginVertical: 8,
+        marginHorizontal: 16,
+        fontSize: 20,
+        color: '#fff'
+    }
+})
