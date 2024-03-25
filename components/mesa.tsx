@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Button, Text, View } from "react-native";
+import { Button, Text, View, SafeAreaView } from "react-native";
 
 export default class Mesa extends Component {
     state = {

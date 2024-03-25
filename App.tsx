@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { Text, View, Image, ImageBackground, Button } from "react-native";
+import { Text, View, Image, ImageBackground, Button, SafeAreaView } from "react-native";
 import Prato from "./components/prato"
 import { StyleSheet } from "react-native";
 import estilos from './estilos/estilos.tsx';
 import Caixa from './components/caixa.tsx';
 import Lista from './components/listaProduto.tsx';
 import Mesa from './components/mesa.tsx';
-
-
+import Restaurante from './components/restaurante.tsx';
+import CT from './components/CaixaDeTexto.tsx'
 
 
 export default function App1() {
@@ -43,8 +43,11 @@ export default function App1() {
 
   return (
 
-    <View style={estilos.container}>
+    <SafeAreaView style={estilos.container}>
       <Mesa nome="mesa1" />
+
+      <Restaurante />
+      <CT />
       {/* <Button
         title={ligado ? "Desligar" : "Ligar"}
         onPress={() => setLigado(!ligado)}
@@ -68,6 +71,7 @@ export default function App1() {
           />
         </View>
       </ImageBackground> */}
-    </View>
+
+    </SafeAreaView>
   );
 }
