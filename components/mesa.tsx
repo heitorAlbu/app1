@@ -11,7 +11,7 @@ export default class Mesa extends Component {
             <View>
                 <Text>Mesa:  - Ativa :{this.state.ligado ? 'Sim:' : 'Não'}</Text>
                 <Button
-                    title={this.state.ligado ? 'Desligar' : 'Ligar'}
+                    title={this.state.ligado ? 'Desligare' : 'Ligar'}
                     onPress={
                         () => { this.setState({ ligado: !this.state.ligado }) }
                     }
